@@ -8,16 +8,16 @@ valores da velocidade inicial (em m/s), da aceleração (m/s2) e do tempo de per
 public class TP01Ex13 {
     static Scanner ler = new Scanner (System.in);
     public static void main (String[] args) {
-        System.out.print("Digite o valor da velocidade inicial:");
+        System.out.print("Digite o valor da velocidade inicial: ");
         double vi = ler.nextDouble();
 
         System.out.print("Digite o valor da aceleracao por segundo: ");
         double at = ler.nextDouble();
 
-        System.out.print("Digite o periodo do percurso: ");
+        System.out.print("Digite o periodo do percurso em segundos: ");
         double tp = ler.nextDouble();
 
-        double vf = (at * tp) + vi;
-        System.out.println("O valor da velocidade final: " + vf);
+        double vf = ((at * tp) * 3.6 ) + vi;
+        System.out.println("O valor da velocidade final: " + vf + " Km/h");
     }
 }
